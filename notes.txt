@@ -1,0 +1,95 @@
+node first.js
+process.cwd()
+proces.argv->
+conlole.log(process.argv)//'C:
+\\Program Files\\nodejs\\node.exe',
+  //'D:\\react_js\\October\\node\\args.js'
+
+`
+const args=process.argv.slice(2);
+for(let arg of args){
+    console.log(`hi there,${arg}`);
+}
+hi there,kashish
+hi there,jai
+`
+`
+const fs=require('fs');
+console.log(fs);
+fs.mkdir('tree',{
+    recursive:true},(err)=>{
+    console.log('in callback');
+        if(err)throw err;
+    
+});
+console.log("after mkdir");
+`
+this created a new directory
+
+
+math.js
+const add=(a,b)=>{
+    return a+b;
+}
+const square=x=>x*x;
+let q=3;
+let t=5;
+// console.log(add(q,t));
+// console.log(square(t));
+module.exports.add=add;
+module.exports.square=square;
+
+
+app.js
+const math=require('./math');
+console.log(math.square(2));
+
+output 4
+
+
+
+when require entire directory use the index.js file
+to export all
+
+//
+const jokes =require("give-me-a-joke")
+` npm install give-me-a-joke
+console.dir(jokes)-gives all the functions of npm library
+
+
+
+``lol
+const jokes=require("give-me-a-joke")
+const coolors=require("colors")
+jokes.getRandomDadJoke(function(joke){
+    console.log(joke.rainbow);
+})
+Why do scuba divers fall backwards into the water? Because if they fell forwards they’d still be in the boat.
+
+
+if error of permision on global install
+sudo chown -R $USER/usr/local/lib/node_modules
+
+to directly import global npm modules use 
+npm link cowsay(module name)
+
+
+cowsay hello 
+ _______
+< hello >
+ -------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+package.json
+
+npm init
+
+this will create a package.json which will automatically be updated when new dependencies are installed
+
+then after that if you call npm install it will install all the dependencies automatically
+
+
